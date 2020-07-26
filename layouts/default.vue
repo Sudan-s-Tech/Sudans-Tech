@@ -2,17 +2,14 @@
   <v-app>
     <appnavbar :items="items"></appnavbar>
     <nuxt/>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <appfooter></appfooter>
   </v-app>
 </template>
 
 <script>
 import navbar from "~/components/navbar"
+import footer from "~/components/footer"
+
 export default {
   data () {
     return {
@@ -37,6 +34,7 @@ export default {
   },
   components:{
     appnavbar: navbar,
+    appfooter: footer
   }
 
 }
