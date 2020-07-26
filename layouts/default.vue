@@ -103,9 +103,14 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
+          title: 'Training',
+          to: '/training'
+        },
+         {
+          icon: 'mdi-chart-bubble',
+          title: 'Events',
+          to: '/events'
+        },
       ],
       miniVariant: false,
       right: true,
