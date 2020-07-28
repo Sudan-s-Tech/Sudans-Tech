@@ -3,20 +3,20 @@
     color="primary lighten-1"
     padless
     absolute
+
   >
     <v-row
       justify="start"
       no-gutters
-        
     >
  
-    <v-col
+    <!-- <v-col
         class="primary lighten-2 py-4 text-center white--text"
         cols="12"
       >
         <strong style="font-size: 20px">Follow us</strong>
  
-      </v-col>
+      </v-col> -->
 
       <v-col
         class="primary lighten-2 py-4 text-center white--text"
