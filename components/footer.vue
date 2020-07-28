@@ -2,7 +2,6 @@
   <v-footer
     color="primary lighten-1"
     padless
-    absolute
   >
     <v-row
       justify="start"
