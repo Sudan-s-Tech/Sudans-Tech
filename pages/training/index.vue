@@ -6,7 +6,7 @@
     <v-row no-gutters
     >
       <v-col
-        v-for="n in content"
+        v-for="n in $store.state.training.content"
         :key="n"
         cols="12"
         sm="4"
@@ -25,7 +25,7 @@
     <v-row no-gutters
     >
       <v-col
-        v-for="n in card"
+        v-for="n in $store.state.training.card"
         :key="n"
         cols="12"
         sm="4"
@@ -53,65 +53,7 @@ export default {
     },
     data(){
         return{
-            
-            card: [
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                },
-                {
-                    title: 'Python',
-                    body: 'Python',
-                    link: '/training/python',
-                    image: 'python.jpg'
-                }
-            ],
-            content: [
-                'Industrial Training',
-                '',
-                '8 Courses',
-                // 'Our goal is to be the #1 learning resource for Training courses',
-                // '',
-                // 'New lessons being added regularly'
-            ]
+        
         };
     }
 }
