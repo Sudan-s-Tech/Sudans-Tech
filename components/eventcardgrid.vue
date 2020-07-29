@@ -49,6 +49,13 @@ export default {
             }
           }
         }
+         if(this.items.length===0)
+        this.items.push({       heading: 'No Upcoming Events',
+                      description: null,
+                      link: '#',
+                      startdate: null,
+                      enddate: null
+              })
       }
       if(this.type==='ongoingevents'){
         for(var i=0;i<eventitems.length;i++){
@@ -67,6 +74,13 @@ export default {
             }
           }
         }
+        if(this.items.length===0)
+        this.items.push({       heading: 'No Ongoing Events',
+                      description: null,
+                      link: '#',
+                      startdate: null,
+                      enddate: null
+              })
       }
     },
     methods: {
