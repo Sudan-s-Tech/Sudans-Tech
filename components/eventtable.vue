@@ -50,6 +50,13 @@ export default {
             }
           }
         }
+         if(this.items.length===0)
+        this.items.push({heading: 'No Past Events',
+                      description: null,
+                      link: '#',
+                      startdate: null,
+                      enddate: null
+              })
   },
     methods: {
             getNow: function() {

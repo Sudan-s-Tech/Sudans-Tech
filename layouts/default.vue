@@ -18,6 +18,10 @@ export default {
       fixed: false,
       items: [
         {
+          title: 'Home',
+          to: '/'
+        },
+        {
           title: 'Events',
           to: '/events'
         },

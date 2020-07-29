@@ -10,9 +10,15 @@
 
       <v-spacer></v-spacer>
       <div class="navbtn" v-if="!screensize">
-      <v-btn v-for="(item,i) in items" :key="i" :to="item.to">
+      <v-tabs
+      background-color="primary accent-4"
+      center-active
+      dark
+      >
+      <v-tab v-for="(item,i) in items" :key="i" :to="item.to">
           {{item.title}}
-      </v-btn>
+      </v-tab>
+      </v-tabs>
       </div>
     </v-app-bar>
     <v-navigation-drawer
@@ -29,6 +35,9 @@
         <v-list-item-group
           active-class="deep-purple--text text--accent-4"
         >
+        <v-list-item>
+          <img src="@/assets/python.jpg" width="100%">
+        </v-list-item>
           <v-list-item v-for="(item,i) in items" :key="i" :to="item.to">
             <v-list-item-title>{{item.title}}</v-list-item-title>
           </v-list-item>
