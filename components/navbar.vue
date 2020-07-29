@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar
-      color="deep-purple accent-4"
+      color="primary accent-4"
       dense
       dark
     >
@@ -16,6 +16,7 @@
       </div>
     </v-app-bar>
     <v-navigation-drawer
+      color="primary accent-4"
       v-model="drawer"
       absolute
       temporary
