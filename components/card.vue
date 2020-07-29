@@ -17,7 +17,7 @@
 
     <v-card-actions>
       <v-btn
-        color="orange"
+        color="primary"
         text
         :to="link"
       >
