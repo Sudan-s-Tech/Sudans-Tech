@@ -5,6 +5,6 @@ export const state = () => ({
                         link: 'https://www.hackthemountain.tech/',
                         startdate: '10-10-2020',
                         enddate: '11-10-2020'
-              }, 
+               },  
             ],
   })
