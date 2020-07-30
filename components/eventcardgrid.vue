@@ -62,20 +62,32 @@ export default {
           if(parseInt(eventitems[i].enddate.split('-')[2])>parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])<parseInt(this.currentdate.split('-')[2])){
             this.items.push(eventitems[i])
           }
-          else if(parseInt(eventitems[i].enddate.split('-')[2])==parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])==parseInt(this.currentdate.split('-')[2]))
+          else if(parseInt(eventitems[i].enddate.split('-')[2])==parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])==parseInt(this.currentdate.split('-')[2]) || parseInt(eventitems[i].enddate.split('-')[2])==parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])<parseInt(this.currentdate.split('-')[2]) || parseInt(eventitems[i].enddate.split('-')[2])>parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])==parseInt(this.currentdate.split('-')[2]))
           {
             if(parseInt(eventitems[i].enddate.split('-')[1])>parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])<parseInt(this.currentdate.split('-')[1])){
             this.items.push(eventitems[i])
           }
-            else if(parseInt(eventitems[i].enddate.split('-')[1])==parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])==parseInt(this.currentdate.split('-')[1])){
-              if(parseInt(eventitems[i].enddate.split('-')[0])>=parseInt(this.currentdate.split('-')[0]) && parseInt(eventitems[i].startdate.split('-')[0])<=parseInt(this.currentdate.split('-')[0])){
-            this.items.push(eventitems[i])
+            else if(parseInt(eventitems[i].enddate.split('-')[1])==parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])==parseInt(this.currentdate.split('-')[1]) || parseInt(eventitems[i].enddate.split('-')[1])==parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])<parseInt(this.currentdate.split('-')[1]) || parseInt(eventitems[i].enddate.split('-')[1])>parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])==parseInt(this.currentdate.split('-')[1])){
+          {  
+                 if(parseInt(eventitems[i].enddate.split('-')[1])==parseInt(this.currentdate.split('-')[1]) && parseInt(eventitems[i].startdate.split('-')[1])==parseInt(this.currentdate.split('-')[1])){
+                   if(parseInt(eventitems[i].enddate.split('-')[0])>=parseInt(this.currentdate.split('-')[0]) && (parseInt(eventitems[i].startdate.split('-')[0])<=parseInt(this.currentdate.split('-')[0])))
+                    this.items.push(eventitems[i])
+                 }
+
+               else if(parseInt(eventitems[i].enddate.split('-')[1])==parseInt(this.currentdate.split('-')[1])){
+                  if(parseInt(eventitems[i].enddate.split('-')[0])>=parseInt(this.currentdate.split('-')[0]))
+                  this.items.push(eventitems[i])
+            }
+              else if (parseInt(eventitems[i].startdate.split('-')[1])==parseInt(this.currentdate.split('-')[1])){
+                 if(parseInt(eventitems[i].startdate.split('-')[0])<=parseInt(this.currentdate.split('-')[0]))
+                  this.items.push(eventitems[i])
+              }
           }
             }
           }
         }
         if(this.items.length===0)
-        this.items.push({       heading: 'No Ongoing Events',
+        this.items.push({heading: 'No Ongoing Events',
                       description: null,
                       link: '#',
                       startdate: null,
