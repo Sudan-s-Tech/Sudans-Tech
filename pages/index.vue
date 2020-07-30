@@ -82,14 +82,30 @@
         </v-row>
       </v-container>
     </div>
+    <br><br><br><br>
+    <div>
+    <v-row>
+    <v-col cols="12" lg="4" md="4" sm="6" v-for="(item,i) in this.teamembers" :key="i">
+       <teamcard :details="item" />
+    </v-col>
+    </v-row>
+    </div>
     <br><br><br><br><br><br><br>
 </div>    
 </template>
 
 
 <script>
+import teamcard from "@/components/teamcard"
 export default {
-    
+    components:{
+      teamcard:teamcard,
+    },
+    data(){
+      return{
+        teamembers: this.$store.state.team.members,
+      }
+    }
 }
 </script>
 
