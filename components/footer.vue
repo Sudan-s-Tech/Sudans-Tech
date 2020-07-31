@@ -13,67 +13,31 @@
 
 
      <v-col
-        class="primary lighten-2 py-4 text-center white--text"
+        class="primary  py-4 text-center white--text"
         cols="12"
       >
         <strong style="font-size: 20px">Follow us</strong>
 
+          <span>
+            <v-btn class="ma-2" large color="success" href="#">
+                 <v-icon>fab fa-linkedin</v-icon>
+                </v-btn>
+           <v-btn class="ma-2" large color="success" href="#">
+                <v-icon>fab fa-twitter-square</v-icon>
+                </v-btn>
+                <v-btn class="ma-2" large color="success" href="#">
+                <v-icon>fab fa-instagram</v-icon>
+                </v-btn>
+                 <v-btn class="ma-2" large color="success" href="#">
+                <v-icon>fab fa-facebook-square</v-icon>
+                </v-btn>
+          </span>
+          
+
       </v-col>
 
-      <!-- <v-row
-        class="grey lighten-2 py-4 text-center white--text mb-6"
-        no-gutters
-      >
-        <v-col
-          md="3"
-          xs="12"
-          sm="12"
-          lg="3"
-          xl="3"
-          offset-md="1"
-        >
-          <v-card
-            class="pa-2"
-            outlined
-            tile
-          >
-            .col-md-3 .offset-md-3
-          </v-card>
-        </v-col>
-        <v-col
-          md="3"
-          xs="12"
-          sm="12"
-          lg="3"
-          xl="3"
-        >
-          <v-card
-            class="pa-2"
-            outlined
-            tile
-          >
-            .col-md-3 .offset-md-3
-          </v-card>
-        </v-col>
-        <v-col
-          md="3"
-          xs="12"
-          sm="12"
-          lg="3"
-          xl="3"
-        >
-          <v-card
-            class="pa-2"
-            outlined
-            tile
-          >
-            .col-md-3 .offset-md-3
-          </v-card>
-        </v-col>
-      </v-row> -->
-
       <v-col
-        class="primary lighten-2 py-4 text-center white--text"
+        class="primary py-4 text-center white--text"
         cols="12"
       >
         {{ new Date().getFullYear() }} — <strong>Sudan's Tech</strong>
