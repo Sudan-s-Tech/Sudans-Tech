@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    color="primary lighten-1"
+    color="accent lighten-1"
     padless
     inset
     width="auto"
@@ -20,7 +20,7 @@
 
       </v-col>
 
-      <v-row
+      <!-- <v-row
         class="grey lighten-2 py-4 text-center white--text mb-6"
         no-gutters
       >
@@ -70,7 +70,7 @@
             .col-md-3 .offset-md-3
           </v-card>
         </v-col>
-      </v-row>
+      </v-row> -->
 
       <v-col
         class="primary lighten-2 py-4 text-center white--text"

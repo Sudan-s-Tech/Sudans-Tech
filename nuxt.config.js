@@ -66,23 +66,23 @@ export default {
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
+ vuetify: {
+  theme: {
+      light: true,  //you don't actually need this line as it's for default
       themes: {
-        dark: {
-          primary: colors.red.darken2,
-          accent: colors.red.darken3,
-          secondary: colors.red.darken3,
-          info: colors.red.lighten1,
-          warning: colors.red.base,
-          error: colors.red.accent4,
-          success: colors.red.accent3
-        }
+          light: {
+            primary: '#2f4572',
+            accent: '#151b26',
+            secondary: '#889abf',
+            info: '#fff4b6',
+            warning: '#72402f',
+            error: '#d1c180',
+            success: '#3a4d72',
+            custom1: '#dfab51'
+          }
       }
-    }
-  },
+  }
+},
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
