@@ -12,7 +12,25 @@
     </v-img>
 
     <v-card-text class="text--primary">
-      <div>{{ body }}</div>
+      <div><v-icon>fas fa-clock</v-icon> {{time}} Hours  | {{lessons}} Lessons</div>
+      <br>
+      <span v-if="!state"
+                    >{{ body.slice(0, 60) }}
+                </span>
+                <a
+                    class=""
+                    v-if="!state"
+                    @click="
+                        state = !state
+                    "
+                    href="#/"
+                >
+                    Read more...
+                </a>
+                <span
+                    v-if="state"
+                    v-html="body"
+                ></span>
     </v-card-text>
 
     <v-card-actions>
@@ -29,6 +47,6 @@
 
 <script>
 export default {
-    props: ['title','body','image','link']
+    props: ['title','body','image','link','time','lessons','state']
 }
 </script>
