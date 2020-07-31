@@ -33,13 +33,13 @@
         dense
       >
         <v-list-item-group
-          active-class="deep-purple--text text--accent-4"
+        color="white"
         >
         <v-list-item>
           <img src="@/assets/python.jpg" width="100%">
         </v-list-item>
-          <v-list-item v-for="(item,i) in items" :key="i" :to="item.to">
-            <v-list-item-title>{{item.title}}</v-list-item-title>
+          <v-list-item v-for="(item,i) in items" :key="i" :to="item.to" color="white">
+            <v-list-item-title color="white"><v-tab color="white">{{item.title}}</v-tab></v-list-item-title>
           </v-list-item>
 
         </v-list-item-group>

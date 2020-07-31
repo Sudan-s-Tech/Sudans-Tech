@@ -4,7 +4,7 @@
     <v-col
             md="3"
             lg="3"
-            sm="6"
+            sm="12"
             cols="12"
             class="pa-2"
             v-for="(item,i) in items"
