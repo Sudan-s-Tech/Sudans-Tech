@@ -46,7 +46,7 @@ background-size: cover;
 
 h3,h1{
     display: table; /* keep the background color wrapped tight */
-    /* margin: 0px auto 0px auto; keep the table centered */
+    margin: 0px auto 0px auto; /* keep the table centered */
     padding:5px;
     background-color:#151b26;
     color:#ffffff;

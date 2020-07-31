@@ -43,14 +43,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
-
-h3,h1{
-    display: table; /* keep the background color wrapped tight */
-    /* margin: 0px auto 0px auto; keep the table centered */
-    padding:5px;
-    background-color:#151b26;
-    color:#ffffff;
-    border-radius: 5px;
-    /* text-align: center; */
-}
 </style>
