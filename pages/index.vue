@@ -31,62 +31,7 @@ happy place .</p>
       </v-row>
     </v-container>
     </div>
-    <div>
-      <v-container>
-        <v-row>
-          <v-spacer></v-spacer>
-          <v-col  
-            md="3"
-            lg="3"
-            sm="12"
-            cols="12"
-            class="pa-2">
-            <v-img src="https://picsum.photos/510/300?random"  max-height="350" max-width="350" ></v-img>
-            </v-col>
-            <v-col  
-            md="3"
-            lg="3"
-            sm="12"
-            cols="12"
-            class="pa-2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            </v-col>
-            <v-spacer></v-spacer>
-        </v-row>
-      </v-container>
-    </div>
-    <br>
-    <div>
-      <v-container>
-        <v-row>
-          <v-col  
-            md="3"
-            lg="4"
-            sm="12"
-            cols="12"
-            class="pa-2">
-            <v-img src="https://picsum.photos/510/300?random"  max-height="350" max-width="350" ></v-img>
-            </v-col>
-            <v-col  
-            md="6"
-            lg="4"
-            sm="12"
-            cols="12"
-            class="pa-2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            </v-col>
-             <v-col  
-            md="3"
-            lg="4"
-            sm="12"
-            cols="12"
-            class="pa-2">
-            <v-img src="https://picsum.photos/510/300?random"  max-height="350" max-width="350" ></v-img>
-            </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <br><br><br><br>
+    <!-- Work from here -->
     <div>
     <v-row>
     <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in this.teamembers" :key="i">
