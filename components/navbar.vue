@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="nav">
     <v-app-bar
       color="primary accent-4"
       dense
@@ -36,7 +36,7 @@
         color="white"
         >
         <v-list-item>
-          <img src="@/assets/python.jpg" width="100%">
+          <img src="@/assets/logo.png" width="100%">
         </v-list-item>
           <v-list-item v-for="(item,i) in items" :key="i" :to="item.to" color="white">
             <v-list-item-title color="white"><v-tab color="white">{{item.title}}</v-tab></v-list-item-title>
@@ -72,6 +72,10 @@ computed:{
 </script>
 
 <style scoped>
+
+#nav{
+  z-index: 10;
+}
 
 .home{
     text-decoration: none;
