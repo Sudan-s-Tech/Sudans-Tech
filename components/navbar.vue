@@ -6,7 +6,7 @@
       dark
     >
     <v-app-bar-nav-icon @click="drawer = true" v-if="screensize"></v-app-bar-nav-icon>
-    <nuxt-link to="/" class="home"><v-toolbar-title>Sudan's Tech</v-toolbar-title></nuxt-link>
+    <nuxt-link to="/" class="home"><v-toolbar-title><img src="@/assets/logo2.png" width="30px" height="30px"> Sudans Tech</v-toolbar-title></nuxt-link>
 
       <v-spacer></v-spacer>
       <div class="navbtn" v-if="!screensize">

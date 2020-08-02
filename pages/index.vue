@@ -185,7 +185,13 @@ p{
 .hero-content {
     justify-content: center;
     text-align: center;
-}}
+}
+
+#grad{
+  height: 750px;
+}
+
+}
 
 @media (max-width: 1263px) and (min-width: 960px)
 {
