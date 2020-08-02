@@ -24,7 +24,7 @@
       >
         <h1>Build Your Future With Us.</h1>
         <h1>Join Our Community</h1>
-        <v-btn rounded color="primary" dark to="#vision">Know More</v-btn>
+        <v-btn rounded color="primary" dark @click="() => this.$vuetify.goTo('#vision')">Know More</v-btn>
       </v-col>
       <v-spacer></v-spacer>
       </v-row>
@@ -65,7 +65,7 @@
           </v-row>
       </v-container>
     </div>
-    <div class="box" id="#vision">
+    <div class="box" id="vision">
       <br>
       <h1>Vision</h1>
       <br>
@@ -81,9 +81,11 @@
     <!-- work ends here -->
     <div>
     <v-row>
+      <v-spacer></v-spacer>
     <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in this.teamembers" :key="i">
        <teamcard :details="item" />
     </v-col>
+    <v-spacer></v-spacer>
     </v-row>
     </div>
     <br><br><br><br><br><br><br>
