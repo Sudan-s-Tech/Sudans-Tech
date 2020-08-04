@@ -1,5 +1,5 @@
 <template>
-<div>contact</div>    
+<div>code of conduct</div>    
 </template>
 
 
