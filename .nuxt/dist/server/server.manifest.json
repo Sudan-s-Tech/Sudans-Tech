@@ -1,0 +1,21 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/coc.js": "pages/coc.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/events/index.js": "pages/events/index.js",
+    "pages/index.js": "pages/index.js",
+    "pages/training/_id/index.js": "pages/training/_id/index.js",
+    "pages/training/index.js": "pages/training/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/coc.js": "pages/coc.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/events/index.js": "pages/events/index.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/training/_id/index.js": "pages/training/_id/index.js.map",
+    "pages/training/index.js": "pages/training/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

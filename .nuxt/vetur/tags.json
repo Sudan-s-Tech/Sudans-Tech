@@ -1,0 +1,56 @@
+{
+  "Card": {
+    "description": "Auto imported from components/card.vue"
+  },
+  "LazyCard": {
+    "description": "Auto imported from components/card.vue"
+  },
+  "Eventcard": {
+    "description": "Auto imported from components/eventcard.vue"
+  },
+  "LazyEventcard": {
+    "description": "Auto imported from components/eventcard.vue"
+  },
+  "Eventcardgrid": {
+    "description": "Auto imported from components/eventcardgrid.vue"
+  },
+  "LazyEventcardgrid": {
+    "description": "Auto imported from components/eventcardgrid.vue"
+  },
+  "Eventtable": {
+    "description": "Auto imported from components/eventtable.vue"
+  },
+  "LazyEventtable": {
+    "description": "Auto imported from components/eventtable.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/footer.vue"
+  },
+  "Heading": {
+    "description": "Auto imported from components/heading.vue"
+  },
+  "LazyHeading": {
+    "description": "Auto imported from components/heading.vue"
+  },
+  "Homecard": {
+    "description": "Auto imported from components/homecard.vue"
+  },
+  "LazyHomecard": {
+    "description": "Auto imported from components/homecard.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar.vue"
+  },
+  "LazyNavbar": {
+    "description": "Auto imported from components/navbar.vue"
+  },
+  "Teamcard": {
+    "description": "Auto imported from components/teamcard.vue"
+  },
+  "LazyTeamcard": {
+    "description": "Auto imported from components/teamcard.vue"
+  }
+}
