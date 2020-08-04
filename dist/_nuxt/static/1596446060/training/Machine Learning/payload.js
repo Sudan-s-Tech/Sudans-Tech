@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/training/Machine Learning", {data:[{}],fetch:[],mutations:[]});
