@@ -1,5 +1,5 @@
 # sudanstech
-
+![CI](https://github.com/Sudan-s-Tech/Sudans-Tech/workflows/CI/badge.svg)
 ## Build Setup
 
 ```bash
