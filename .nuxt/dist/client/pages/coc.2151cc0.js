@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{425:function(e,t,n){"use strict";n.r(t);var c={},o=n(47),component=Object(o.a)(c,(function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("code of conduct")])}),[],!1,null,"12480ce5",null);t.default=component.exports}}]);
