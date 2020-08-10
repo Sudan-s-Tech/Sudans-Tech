@@ -2,7 +2,7 @@
   <div class="team-box">
                     <div class="team-pic">
                          <img
-        :src="require('~/assets/' + this.details.image)"
+        :src=" this.details.image"
         :alt="this.details.name"
       >
                     </div>

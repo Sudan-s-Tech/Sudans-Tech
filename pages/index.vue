@@ -81,7 +81,7 @@
     <div>
     <v-row>
       <v-spacer></v-spacer>
-    <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in this.teamembers" :key="i">
+    <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
        <teamcard :details="item" />
     </v-col>
     <v-spacer></v-spacer>
@@ -95,6 +95,7 @@
 <script>
 import teamcard from "@/components/teamcard"
 import homecardVue from '../components/homecard.vue'
+import axios from 'axios'
 export default {
     components:{
       teamcard:teamcard,
@@ -102,7 +103,6 @@ export default {
     },
     data(){
       return{
-        teamembers: this.$store.state.team.members,
         image: 'logo.png',
         homecards: [
           {
@@ -127,6 +127,14 @@ export default {
           },
         ]
       }
+    },
+    asyncData(){
+         return  axios.get('https://sudans-tech.firebaseio.com/members.json')
+            .then(
+              res=>{
+                return{teamembers:res.data}
+              }
+            )
     }
 }
 </script>

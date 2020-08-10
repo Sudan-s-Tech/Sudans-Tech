@@ -27,11 +27,21 @@
 <script>
 import eventcardgrid from "@/components/eventcardgrid"
 import eventtable from "@/components/eventtable"
+import axios from 'axios'
 export default {
     components:{
         eventcardgrid:eventcardgrid,
         eventtable: eventtable
     },
+    asyncData({store}){
+      return axios.get('https://sudans-tech.firebaseio.com/events.json')
+       .then(res=>{
+         return {events:res.data}
+       })
+    },
+    created(){
+        this.$store.state.events.events=this.events
+    }
 }
 </script>
 
