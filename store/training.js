@@ -11,10 +11,9 @@ export const state = () => ({
           lessons: 37,
           register: 'https://www.python.org/',
           teacher: [
-            { title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-            { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-            { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-            { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+            { title: 'To be announced', 
+            // avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' 
+          },
           ],
           items: [
             {
@@ -113,10 +112,9 @@ export const state = () => ({
         lessons: 14,
         register: 'https://www.python.org/',
         teacher: [
-          { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-          { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-          { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'To be announced', 
+            // avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' 
+          },
         ],
         items: [
           {
@@ -130,113 +128,113 @@ export const state = () => ({
             title: 'Supervised learning',
             active: true,
             items: [
-              { title: 'Numpy' },
-              { title: 'Pandas' },
-              { title: 'Matplotlib' },
-              { title: 'Scikit-Learn' },
-              { title: 'few other libraries' },
+              // { title: 'Numpy' },
+              // { title: 'Pandas' },
+              // { title: 'Matplotlib' },
+              // { title: 'Scikit-Learn' },
+              // { title: 'few other libraries' },
             ],
           },
           {
             title: 'Unsupervised learning',
             items: [
-              { title: 'Image Basics' },
-              { title: 'Pixel Coordinate System' },
-              { title: 'Getting started with Images' },
-              { title: 'Getting started with Videos' },
-              { title: 'Drawing Functions in OpenCV' },
-              { title: 'Mouse as a Paint Brush' },
+              // { title: 'Image Basics' },
+              // { title: 'Pixel Coordinate System' },
+              // { title: 'Getting started with Images' },
+              // { title: 'Getting started with Videos' },
+              // { title: 'Drawing Functions in OpenCV' },
+              // { title: 'Mouse as a Paint Brush' },
             ],
           },
           {
             title: 'Linear Regression',
             items: [
-              { title: 'Basic Operations' },
-              { title: 'Arithmetic Opearations' },
-              { title: 'Bitwise Operations' },
+              // { title: 'Basic Operations' },
+              // { title: 'Arithmetic Opearations' },
+              // { title: 'Bitwise Operations' },
             ],
           },
           {
             title: 'Logistic Regression',
             items: [
-              { title: 'Image Transformations' },
-              { title: 'Translation' },
-              { title: 'Rotation' },
-              { title: 'Resizing' },
-              { title: 'Flipping' },
-              { title: 'Cropping' },
-              { title: 'Color Spaces BGR, RGB, HSV' },
+              // { title: 'Image Transformations' },
+              // { title: 'Translation' },
+              // { title: 'Rotation' },
+              // { title: 'Resizing' },
+              // { title: 'Flipping' },
+              // { title: 'Cropping' },
+              // { title: 'Color Spaces BGR, RGB, HSV' },
             ],
           },
           {
             title: 'K nearest neighbours',
             items: [
-              { title: 'Introduction' },
+              // { title: 'Introduction' },
             ],
           },
           {
             title: 'Decision Trees and Random Forest ',
             items: [
-              { title: 'Image Thresholding' },
-              { title: 'Smoothening' },
-              { title: 'Blurring' },
-              { title: 'Edge Detection' },
-              { title: 'Harris Corner detection' },
-              { title: 'BRIEF' },
-              { title: 'ORB' }
+              // { title: 'Image Thresholding' },
+              // { title: 'Smoothening' },
+              // { title: 'Blurring' },
+              // { title: 'Edge Detection' },
+              // { title: 'Harris Corner detection' },
+              // { title: 'BRIEF' },
+              // { title: 'ORB' }
             ],
           },
           {
             title: 'SVM',
             items: [
-              { title: 'Introduction' },
+              // { title: 'Introduction' },
             ],
           },
           {
             title: 'K means Clustering',
             items: [
-              { title: 'Haarcascades' },
-              { title: 'Smile Detection' },
-              { title: 'Face Detection' },
-              { title: 'Eye Detection' },
-              { title: 'Vehicle Detection' },
+              // { title: 'Haarcascades' },
+              // { title: 'Smile Detection' },
+              // { title: 'Face Detection' },
+              // { title: 'Eye Detection' },
+              // { title: 'Vehicle Detection' },
             ],
           },
           {
             title: 'Neural networks',
             items: [
-              { title: 'Introduction' },
-              { title: 'Setup' },
+              // { title: 'Introduction' },
+              // { title: 'Setup' },
             ],
           },
           {
             title: 'Project',
             active: true,
             items: [
-              { title: 'Numpy' },
-              { title: 'Pandas' },
-              { title: 'Matplotlib' },
-              { title: 'Scikit-Learn' },
-              { title: 'few other libraries' },
+              // { title: 'Numpy' },
+              // { title: 'Pandas' },
+              // { title: 'Matplotlib' },
+              // { title: 'Scikit-Learn' },
+              // { title: 'few other libraries' },
             ],
           },
           {
             title: 'Intro to NLP',
             items: [
-              { title: 'Image Basics' },
-              { title: 'Pixel Coordinate System' },
-              { title: 'Getting started with Images' },
-              { title: 'Getting started with Videos' },
-              { title: 'Drawing Functions in OpenCV' },
-              { title: 'Mouse as a Paint Brush' },
+              // { title: 'Image Basics' },
+              // { title: 'Pixel Coordinate System' },
+              // { title: 'Getting started with Images' },
+              // { title: 'Getting started with Videos' },
+              // { title: 'Drawing Functions in OpenCV' },
+              // { title: 'Mouse as a Paint Brush' },
             ],
           },
           {
             title: 'Text Classification',
             items: [
-              { title: 'Basic Operations' },
-              { title: 'Arithmetic Opearations' },
-              { title: 'Bitwise Operations' },
+              // { title: 'Basic Operations' },
+              // { title: 'Arithmetic Opearations' },
+              // { title: 'Bitwise Operations' },
             ],
           },
         ],
@@ -252,10 +250,9 @@ export const state = () => ({
       lessons: 7,
       register: 'https://www.python.org/',
       teacher: [
-        { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-        { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-        { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
-        { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+        { title: 'To be announced', 
+            // avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' 
+          },
       ],
       items: [
         {

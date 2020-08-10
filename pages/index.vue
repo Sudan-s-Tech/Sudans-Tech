@@ -48,15 +48,14 @@
             <v-col
               v-for="(n,i) in homecards"
               :key="i"
-              cols="12"
+              cols="12 pa-6"
               md="auto"
               lg="auto"
               xs="auto"
               sm="auto"
-              xl="auto"
-              
+              xl="auto" 
             >
-              <homecard
+              <homecard              
               :title="n.title"
               :icon="n.icon"
               :body="n.body"

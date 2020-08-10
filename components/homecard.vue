@@ -23,7 +23,9 @@ export default {
     padding: 10px;
     box-shadow: 0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08);
     border-top: 4px solid #889abf;
-    margin: 0.7rem;
+    margin: 5px auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
     position: relative;
 }
 h1{
