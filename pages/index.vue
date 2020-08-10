@@ -136,7 +136,8 @@ export default {
                 return{teamembers:res.data}
               }
             )
-    }
+    },
+    watchQuery: true
 
 }
 </script>

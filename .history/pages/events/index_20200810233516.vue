@@ -41,8 +41,7 @@ export default {
     },
     created(){
         this.$store.state.events.events=this.events
-    },
-    watchQuery: true
+    }
 }
 </script>
 
