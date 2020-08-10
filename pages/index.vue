@@ -96,7 +96,6 @@
 import teamcard from "@/components/teamcard"
 import axios from 'axios'
 import homecardVue from '../components/homecard.vue'
-import axios from 'axios'
 
 export default {
     components:{
