@@ -31,16 +31,10 @@ export default {
         }    
       },
     mounted(){
-      axios.get('https://sudans-tech.firebaseio.com/events.json')
-       .then(res=>{
-         this.$store.state.events.events=res.data
-       })
-      console.log(this.$store.state.events.events)
       var eventitems=this.$store.state.events.events
       this.getNow()
       if(this.type==='upcomingevents'){
         for( let i in eventitems){
-          console.log(eventitems[i])
           if(parseInt(eventitems[i].startdate.split('-')[2])>parseInt(this.currentdate.split('-')[2])){
             this.items.push(eventitems[i])
           }
