@@ -105,6 +105,7 @@ export default {
     data(){
       return{
         image: 'logo.png',
+        teamembers:null,
         homecards: [
           {
             title: 'Get real employable skills',
@@ -129,16 +130,14 @@ export default {
         ]
       }
     },
-    asyncData(){
-         return  axios.get('https://sudans-tech.firebaseio.com/members.json')
+    created(){
+           axios.get('https://sudans-tech.firebaseio.com/members.json')
             .then(
               res=>{
-                return{teamembers:res.data}
+                this.teamembers=res.data
               }
             )
     },
-    watchQuery: true
-
 }
 </script>
 
