@@ -39,9 +39,6 @@ export default {
          this.$store.state.events.events=res.data
        })
     },
-    created(){
-        this.$store.state.events.events=this.events
-    },
 }
 </script>
 
