@@ -31,7 +31,7 @@
           
           >
               <v-img justify-center
-                     :src="require('~/assets/' + content.image)"
+                     :src="content.image"
                      lazy-src="https://picsum.photos/id/11/100/60"
                      class="grey lighten-2 ma-8 justify-center"
                      min-width="80%"
@@ -133,7 +133,7 @@
 
 <script>
     import heading from "~/components/heading";
-
+    import axios from 'axios'
     export default {
         name: "index.vue",
       components: {
@@ -146,13 +146,22 @@
           };
       },
       created() {
-          this.course = this.$route.params.id
+        axios.get('https://sudans-tech.firebaseio.com/training.json')
+       .then(res=>{
+         var result = Object.keys(res.data).map((key) => [res.data[key]]);
+         this.$store.state.training.card =[]
+         for (let index =0; index < result.length; index++){
+           this.$store.state.training.card.push(result[index][0])
+         }
+         this.course = this.$route.params.id
         for (let index = 0; index < this.$store.state.training.card.length; index++) {
           if(this.course === this.$store.state.training.card[index].title){
             this.content = this.$store.state.training.card[index]
             break;
           }
         }
+       })
+          
       },
     }
 </script>

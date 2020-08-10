@@ -44,6 +44,8 @@
 
 <script>
 import cardVue from '../../components/card.vue'
+import axios from 'axios'
+
 export default {
     components: {
         course: cardVue,
@@ -51,18 +53,28 @@ export default {
     data(){
         return{
           duration: null,
-          lessons: null
+          lessons: null,
+          course: null
         };
     },
+
   created() {
-      var total = 0
-      var total_1 = 0
-    for (let index = 0; index < this.$store.state.training.card.length; index++) {
-      total += this.$store.state.training.card[index].duration
-      total_1 += this.$store.state.training.card[index].lessons
-    }
-    this.duration=total
-    this.lessons=total_1
+     axios.get('https://sudans-tech.firebaseio.com/training.json')
+       .then(res=>{
+         var result = Object.keys(res.data).map((key) => [res.data[key]]);
+         this.$store.state.training.card =[]
+         for (let index =0; index < result.length; index++){
+           this.$store.state.training.card.push(result[index][0])
+         }
+        var total = 0
+        var total_1 = 0
+        for (let index = 0; index < this.$store.state.training.card.length; index++) {
+          total += parseInt(this.$store.state.training.card[index].duration) 
+          total_1 += parseInt(this.$store.state.training.card[index].lessons) 
+        }
+        this.duration=total
+        this.lessons=total_1
+       })
   }
 }
 </script>

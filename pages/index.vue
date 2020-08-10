@@ -94,7 +94,9 @@
 
 <script>
 import teamcard from "@/components/teamcard"
+import axios from 'axios'
 import homecardVue from '../components/homecard.vue'
+
 export default {
     components:{
       teamcard:teamcard,
@@ -127,7 +129,7 @@ export default {
           },
         ]
       }
-    }
+    },
 }
 </script>
 
