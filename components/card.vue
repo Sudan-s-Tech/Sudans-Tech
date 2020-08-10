@@ -6,7 +6,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      :src="require('~/assets/' + image)"
+      :src="image"
     >
       <v-card-title>{{ title }}</v-card-title>
     </v-img>
