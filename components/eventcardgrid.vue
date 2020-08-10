@@ -17,6 +17,7 @@
 
 <script>
 import eventcard from "@/components/eventcard"
+import axios from 'axios'
 export default {
     name: 'eventcardgrid',
     components:{
@@ -33,7 +34,7 @@ export default {
       var eventitems=this.$store.state.events.events
       this.getNow()
       if(this.type==='upcomingevents'){
-        for(var i=0;i<eventitems.length;i++){
+        for( let i in eventitems){
           if(parseInt(eventitems[i].startdate.split('-')[2])>parseInt(this.currentdate.split('-')[2])){
             this.items.push(eventitems[i])
           }
@@ -58,7 +59,7 @@ export default {
               })
       }
       if(this.type==='ongoingevents'){
-        for(var i=0;i<eventitems.length;i++){
+        for(let i in eventitems){
           if(parseInt(eventitems[i].enddate.split('-')[2])>parseInt(this.currentdate.split('-')[2]) && parseInt(eventitems[i].startdate.split('-')[2])<parseInt(this.currentdate.split('-')[2])){
             this.items.push(eventitems[i])
           }
