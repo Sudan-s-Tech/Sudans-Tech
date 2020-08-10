@@ -33,16 +33,12 @@ export default {
         eventcardgrid:eventcardgrid,
         eventtable: eventtable
     },
-    asyncData({store}){
-      return axios.get('https://sudans-tech.firebaseio.com/events.json')
+    created(){
+        axios.get('https://sudans-tech.firebaseio.com/events.json')
        .then(res=>{
-         return {events:res.data}
+         this.$store.state.events.events=res.data
        })
     },
-    created(){
-        this.$store.state.events.events=this.events
-    },
-    watchQuery: true
 }
 </script>
 
