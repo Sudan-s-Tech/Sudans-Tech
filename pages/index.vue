@@ -34,7 +34,7 @@
     <!-- Work from here -->
     <div class="text">
       <br><br>
-      <h3><span id='dont'> Don't </span> waste your valuable time or money</h3>
+      <h3> <strike> Don't</strike> waste your valuable time or money</h3>
       <p>Our training provides real results </p>
     </div>
 
@@ -113,19 +113,19 @@ export default {
             icon: 'fas fa-briefcase'
           },
           {
-            title: 'Get real employable skills',
-            body: 'Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.',
-            icon: 'fas fa-briefcase'
+            title: 'Project-based, active learning',
+            body: 'Learn by doing with real-world projects and other hands-on exercises that lead to real skills mastery.',
+            icon: 'fas fa-lightbulb'
           },
           {
-            title: 'Get real employable skills',
-            body: 'Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.',
-            icon: 'fas fa-briefcase'
+            title: 'Learn on your schedule',
+            body: 'Self-paced learning - whenever and wherever you want. Graduate while learning part-time for 10 hrs/week.',
+            icon: 'fas fa-clock'
           },
           {
-            title: 'Get real employable skills',
-            body: 'Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.',
-            icon: 'fas fa-briefcase'
+            title: 'The help you need, when you need it',
+            body: 'Reach out to our mentors 24/7 and have your coding questions answered quickly so you can keep learning.',
+            icon: 'fas fa-comments'
           },
         ]
       }
