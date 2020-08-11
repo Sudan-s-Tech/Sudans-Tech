@@ -81,9 +81,9 @@
     <div>
     <v-row>
       <v-spacer></v-spacer>
-    <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
+    <lazy-v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
        <teamcard :details="item" />
-    </v-col>
+    </lazy-v-col>
     <v-spacer></v-spacer>
     </v-row>
     </div>
@@ -105,6 +105,7 @@ export default {
     data(){
       return{
         image: 'logo.png',
+        teamembers:[],
         homecards: [
           {
             title: 'Get real employable skills',
@@ -129,15 +130,14 @@ export default {
         ]
       }
     },
-    asyncData(){
-         return  axios.get('https://sudans-tech.firebaseio.com/members.json')
+    created(){
+           axios.get('https://sudans-tech.firebaseio.com/members.json')
             .then(
               res=>{
-                return{teamembers:res.data}
+                this.teamembers=res.data
               }
             )
-    }
-
+    },
 }
 </script>
 
@@ -176,6 +176,10 @@ export default {
 }
 p{
   padding: 15px;
+}
+
+#dont{
+  text-decoration: line-through;
 }
 
 @media (max-width: 480px){

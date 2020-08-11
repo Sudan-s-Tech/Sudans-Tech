@@ -33,15 +33,6 @@ export default {
         eventcardgrid:eventcardgrid,
         eventtable: eventtable
     },
-    asyncData({store}){
-      return axios.get('https://sudans-tech.firebaseio.com/events.json')
-       .then(res=>{
-         return {events:res.data}
-       })
-    },
-    created(){
-        this.$store.state.events.events=this.events
-    }
 }
 </script>
 

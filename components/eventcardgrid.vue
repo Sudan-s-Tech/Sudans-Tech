@@ -30,7 +30,10 @@ export default {
       currentdate: null
         }    
       },
-    mounted(){
+    created(){
+      axios.get('https://sudans-tech.firebaseio.com/events.json')
+       .then(res=>{
+         this.$store.state.events.events=res.data
       var eventitems=this.$store.state.events.events
       this.getNow()
       if(this.type==='upcomingevents'){
@@ -94,7 +97,7 @@ export default {
                       startdate: null,
                       enddate: null
               })
-      }
+      }})
     },
     methods: {
             getNow: function() {
