@@ -34,7 +34,7 @@
     <!-- Work from here -->
     <div class="text">
       <br><br>
-      <h3>Don't waste your valuable time or money</h3>
+      <h3><span id='dont'> Don't </span> waste your valuable time or money</h3>
       <p>Our training provides real results </p>
     </div>
 
@@ -81,9 +81,9 @@
     <div>
     <v-row>
       <v-spacer></v-spacer>
-    <v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
+    <lazy-v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
        <teamcard :details="item" />
-    </v-col>
+    </lazy-v-col>
     <v-spacer></v-spacer>
     </v-row>
     </div>
@@ -105,7 +105,7 @@ export default {
     data(){
       return{
         image: 'logo.png',
-        teamembers:null,
+        teamembers:[],
         homecards: [
           {
             title: 'Get real employable skills',
@@ -176,6 +176,10 @@ export default {
 }
 p{
   padding: 15px;
+}
+
+#dont{
+  text-decoration: line-through;
 }
 
 @media (max-width: 480px){
