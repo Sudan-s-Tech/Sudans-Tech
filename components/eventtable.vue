@@ -31,9 +31,10 @@ export default {
         ],
       }
     },
-  mounted(){
-     var eventitems=this.$store.state.events.events
-      this.getNow()
+ async created(){
+     this.getNow()
+     var eventitems=this.$store.state.events.events;
+     eventitems=Object.values(eventitems);
      for(var i=0;i<eventitems.length;i++){
           if(parseInt(eventitems[i].enddate.split('-')[2])<parseInt(this.currentdate.split('-')[2])){
             this.items.push(eventitems[i])
