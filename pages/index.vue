@@ -75,10 +75,31 @@
         class="my-2" to="/training">
           Training
       </v-btn>
+          <v-btn large color="accent"
+        rounded
+        class="my-2" href="https://forms.gle/jEo1wbgaK1dPaDDz7">
+          Community
+      </v-btn>
       <br><br><br>
     </div>
-    <!-- work ends here -->
     <div>
+      <v-row>
+       <statcard              
+              title="Participants"
+              icon="fas fa-users"
+              body="1300+"
+                  />
+       <statcard              
+              title="Workshops"
+              icon="fas fa-chalkboard-teacher"
+              body="30+"
+                  />
+       <statcard              
+              title="Girls Impacted"
+              icon="fas fa-female"
+              body="600+"
+                  />
+      </v-row>
     <v-row>
       <v-spacer></v-spacer>
     <lazy-v-col cols="12" lg="4" md="4" sm="12" v-for="(item,i) in teamembers" :key="i">
@@ -96,6 +117,7 @@
 import teamcard from "@/components/teamcard"
 import axios from 'axios'
 import homecardVue from '../components/homecard.vue'
+import statcard from '../components/statcard'
 
 export default {
     components:{
