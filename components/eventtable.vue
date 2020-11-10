@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: 'eventtable',
      data () {
@@ -33,7 +34,8 @@ export default {
     },
  async created(){
      this.getNow()
-     var eventitems=this.$store.state.events.events;
+     var eventitems=await axios.get('https://sudans-tech.firebaseio.com/events.json');
+     eventitems=eventitems.data;
      eventitems=Object.values(eventitems);
      for(var i=0;i<eventitems.length;i++){
           if(parseInt(eventitems[i].enddate.split('-')[2])<parseInt(this.currentdate.split('-')[2])){
