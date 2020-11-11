@@ -1,4 +1,4 @@
-# sudanstech
+# Sudan's tech
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/75ca8463-aa6c-40fc-a0a7-e3c4a19f2dfc/deploy-status)](https://app.netlify.com/sites/sudanstech/deploys)
 
